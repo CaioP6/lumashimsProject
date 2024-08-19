@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#272735">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="website icon" type="png" href="assets/lumashims.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+
+<header>
+    <nav class="nav-bar">
+        <div class="logo">
+            <img src="assets/lumashims.png" alt="">
+            <h1>Lumashims Desportivos</h1>
+        </div>
+
+        <div class="nav-list">
+            <ul>
+                <li class="nav-item"><a href="home.html" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+                <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+            </ul>
+        </div>
+
+        <div class="mobile-menu-icon">
+            <button onclick="menuShow()">
+                <img class="icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgdmlld0JveD0iMCAwIDI1NiAyNTYiPjxwYXRoIGZpbGw9IiM0MjQyN2MiIGQ9Ik0yMjQgMTI4YTggOCAwIDAgMS04IDhINDBhOCA4IDAgMCAxIDAtMTZoMTc2YTggOCAwIDAgMSA4IDhNNDAgNzJoMTc2YTggOCAwIDAgMCAwLTE2SDQwYTggOCAwIDAgMCAwIDE2bTE3NiAxMTJINDBhOCA4IDAgMCAwIDAgMTZoMTc2YTggOCAwIDAgMCAwLTE2Ii8+PC9zdmc+" alt="">
+            </button>
+        </div>
+    </nav>
+
+    <div class="mobile-menu">
+        <ul>
+            <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+            <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+        </ul>
+
+    </div>
+</header>
+
+<body> 
+    <div class="mainLogin">
+        <div class="leftLogin">
+            <h1 class="loginTitle">
+                Faça login!<br> E entre para o nosso time!
+            </h1>
+            <h1 class="cadastroTitle transitionClose">Faça o Cadastro!<br>E se torne do nosso time!</h1>
+            
+            <img class="leftLoginImage" src="assets/coach.svg" alt="">
+            <img class="leftCadastroImage transitionClose" src="assets/register.svg" alt="">
+        </div>
+
+        <div class="rightLogin">
+            <div class="cardLogin transitionOpen">
+                <h1>Login</h1>
+
+                <ul class="logIcon">
+                    <li href="#"><i class="fab fa-google"></i></li>
+                    <li href="#"><i class="fab fa-facebook"></i></li>
+                    <li href="#"><i class="fab fa-linkedin"></i></li>
+                </ul>
+                
+                <div class="textfield">
+                    <label for="usuario">Usuário</label>
+                    <span class="icon"><i class="fa-thin fa-envelope"></i></span>
+                    <input type="text" name="usuarioInput" placeholder="Usuário">
+                </div>
+                
+                <div class="textfield">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senhaInput" placeholder="Senha">
+                </div>
+
+                <button class="btnLogin">Entrar</button>
+                
+                <p>Não tem conta? <strong class="textToCadastro" onclick="cadastro()">Crie uma!</strong></p>
+                
+                <a class="alteraSenha" href="#">Esqueceu a senha?</a>
+                    
+            </div>
+
+            <div class="cardCadastro transitionClose">
+
+                    <h1>Cadastro</h1>
+    
+                    <ul class="cadIcon">
+                        <li href="#"><i class="fab fa-google"></i></li>
+                        <li href="#"><i class="fab fa-facebook"></i></li>
+                        <li href="#"><i class="fab fa-linkedin"></i></li>
+                    </ul>
+                    
+                    <div class="infoCadastro">
+
+                        <div class="textfield">
+                            <label for="usuarioCadastro">Nome de Usuário</label>
+                            <input type="text" name="usuario" placeholder="Usuário">
+                        </div>
+                        
+                        <div class="textfield">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" placeholder="Email">
+                        </div>
+                    
+                        <div class="textfield">
+                            <label for="senha">Senha</label>
+                            <input type="password" name="senha" placeholder="Senha">
+                        </div>
+                        
+                        <div class="textfield">
+                            <label for="senha">Confirme a senha</label>
+                            <input type="password" name="senhaVerify" placeholder="Senha">
+                        </div>
+                    
+                </div>
+
+                <button class="btnRegistro">Cadastrar</button>
+                
+                <p class="pToLogin">Já possui conta? <strong class="textToLogin" onclick="login()">Faça login.</strong></p>
+                    
+                </div>
+            </div>
+
+    </div>
+
+    <script src="js/login.js"></script>
+    <script src="js/app.js"></script>
+    <noscript>Você precisa de JavaScript para abrir a página</noscript>
+</body>
+</html>

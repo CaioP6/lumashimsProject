@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+VIC:wght@100..400&display=swap');
+
+/* width */
+
+
+.mainLogin{
+    width: 100vw;
+    height: 83vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+.leftLogin{
+    width: 50vw;
+    height: 60vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.leftLogin h1{
+    font-size: 3vw;
+    color: #bdbdf8;
+    height: 3vh;
+    position: relative;
+    
+}
+
+
+.leftLoginImage{
+    width: 30vw;
+    height: auto;
+    display: flex;
+    
+}
+
+
+.leftCadastroImage{
+    width: 30vw;
+    height: auto;
+    display: flex;
+    margin-top: 5vh;
+    
+}
+
+
+.rightLogin{
+    display: flex;
+    flex-direction: column;
+
+    width: 50vw;
+    height:fit-content;
+
+    justify-content: center;
+    align-items: center;
+    padding-top: 2vh;
+    position: relative;
+}
+
+
+/*Inicio do Cartão de Login*/
+
+.cardLogin{
+
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 35px;
+
+    
+
+    background: #100a24;
+    border-radius: 10%;
+    box-shadow: 0 10px 40px #1a103ac9;
+
+    opacity: 25%;
+    }
+.cardLogin h1{
+    color: #a4a4fd;
+    font-weight: 800;
+    margin: 0;
+}
+
+.cardLogin p{
+    font-size: 17px;
+    font-weight: 500;
+    color: #a4a4fd;
+    margin: 10px 0 0;
+}
+
+/*Icone de login do google, facebook e linkedin*/
+.fab{
+    color: #b0daf3;
+}
+
+.fab:hover{
+    border: solid 1px #a4a4fd;
+    border-radius: 50px;
+    color:#6969a1;
+    cursor: pointer;
+    border-top-width: 0;
+    border-bottom-width: 0;
+
+    transition: color 0.5s;
+}
+
+.fa-linkedin:hover{
+    border-radius: 0.2em;
+    border-top-width: 0;
+    border-bottom-width: 0;
+}
+
+.logIcon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-inline-start: 0;
+
+    margin: 10px 0;
+
+    width: 50%
+}
+.logIcon li{
+    display: block;
+    margin: 0 20px;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    scale: 1.5;
+
+    
+
+    transition: transform 0.5s ease-out;
+}
+.logIcon li:hover{
+    transform: scale(1.5);
+
+}
+
+
+.textfield{ /*campo de texto do input*/
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    margin: 5px 0;
+}
+
+.textfield input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #2c1b63;
+
+    color: #a4a4fd;
+    font-size: 12pt;
+
+    box-shadow: 0 10px 40px #2c1b6371;;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield input::placeholder{
+    color: #6e6ea0be;
+}
+
+.textfield label{
+    color: #a4a4fd;
+    margin-bottom: 10px;
+}
+
+
+/*botão de login*/
+.btnLogin{
+    width: 100%;
+    padding: 16px 0;
+    margin: 10px;
+    cursor: pointer;
+    outline: none;
+
+    color: white;
+    border: none;
+    background-color: slateblue;
+    border-radius: 20px;
+
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color:#100a24;
+
+    transition: transform 0.5s ease;
+}
+
+.btnLogin:hover{
+        background-color: transparent;
+        color: slateblue;
+        border: solid 1px slateblue;
+    
+        -webkit-transition: background-color 0.5s, color 0.5s;
+        transition: background-color 0.5s, color 0.5s;
+        transform: scale(1.05)
+    }
+
+
+/*texto para trocar para o cardCadastro*/
+.textToCadastro{
+    font-weight: 400;
+    font-style: italic;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+/*"Esqueceu a senha?*/
+.alteraSenha{
+    display: flex;
+    justify-content: center;
+    margin: 15px 0 0;
+    text-decoration: none;
+}
+
+
+/*inicio do cartão do Cadastro */
+.cardCadastro{
+    position: relative;
+    width: 60%;
+    height: auto;
+    padding: 30px 35px;    
+    box-sizing: content-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    background: #100a24;
+    background-repeat: none;
+    border-radius: 10%;
+    box-shadow: 0 10px 40px #1a103ac9;
+    
+}
+
+.cardCadastro h1{
+    color: #a4a4fd;
+    font-weight: 800;
+    margin: 0;
+    display: flex;
+}
+
+.cardCadastro p{
+    margin: 10px 0 0;
+    font-weight: 400;
+}
+
+.cadIcon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding-inline-start: 0;
+    margin: 10px 0;   
+    box-sizing: border-box;
+}
+
+.cadIcon li{
+    display: block;
+    margin: 0 20px;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    scale: 1.5;
+
+    transition: transform 0.5s ease-out;
+}
+
+.cadIcon li:hover{
+    transform: scale(1.5);
+}
+
+
+/*cartão pra colocar as informações e fazer o cadastro*/
+.infoCadastro{
+    padding-right: 8px;
+    overflow-y: scroll;
+
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+    
+
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.infoCadastro .textfield{
+    margin-top: 5px;
+}
+
+.infoCadastro::-webkit-scrollbar {
+    width: 10px;
+    
+}
+
+.infoCadastro::-webkit-scrollbar-track {
+    background-color: #1a103ac9;
+    border-radius: 20px;
+}
+
+.infoCadastro::-webkit-scrollbar-thumb {
+    background-color: #a4a4fd;
+    border-radius: 20px;
+    
+}
+
+/*botão de registro*/
+.btnRegistro{
+    width: 100%;
+    padding: 16px 0;
+    margin: 5px 10px 0 0  ;
+    cursor: pointer;
+    outline: none;
+
+    border: none;
+    background-color: slateblue;
+    border-radius: 20px;
+
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color:#100a24;
+
+    transition: transform 0.5s ease;
+}
+
+.btnRegistro:hover{
+    background-color: transparent;
+    color: slateblue;
+    border: solid 1px slateblue;
+
+    -webkit-transition: background-color 0.5s, color 0.5s;
+
+    transition: background-color 0.5s, color 0.5s;
+    transform: scale(1.05);
+}
+
+/*"não tem conta?"*/
+.pToLogin{
+    margin-top: 20px;
+    
+    color: #a4a4fd;
+    font-weight: 200;
+    text-decoration: none;
+}
+
+/*texto para trocar para a página de Login*/
+.textToLogin{
+    font-weight: 400;
+    font-style: italic;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*classe para definir o display dos cards*/
+
+.transitionOpen{
+    visibility: visible;
+    transition: visibility 0s, opacity 0.5s linear;
+    opacity: 1;
+    max-height: 70vh;
+    height: auto;
+    padding: auto;
+    
+    
+}
+
+.transitionClose{
+    opacity: 0;
+    height: 0;
+    padding: 0;
+    visibility: hidden;
+    transition: all 0s;
+    position: absolute;
+}
+
+
+@media screen and (max-width: 730px){
+    
+    .mainLogin{
+        flex-direction: column;
+        height: 85vh;
+    }
+    
+
+    .leftLogin{
+        height: auto;
+        width: 100%;
+    }
+    .leftLogin h1{
+        display: none;
+    }
+    
+    
+    .rightLogin{
+        width: 100%;
+        height: auto;
+    }
+
+
+    .cardLogin{
+        width: 80%;
+        
+    }
+
+    .logIcon{
+        display: flex;
+        justify-content: space-between;
+       
+
+        padding-inline-start: 0;
+    }
+    .logIcon li{
+        list-style: none;
+        
+        
+    }
+
+
+    .cardCadastro{
+        width: 80%;
+        height: auto;
+        display: block;
+        padding-bottom: 20px;
+
+    }
+    
+    .cardCadastro p{
+        margin-top: 10px;
+    }
+
+
+    .btnRegistro{
+        margin: 5px 0 0;
+    }
+
+    .leftLoginImage{
+        width: 50vw;
+        display: block;
+        margin-top: -10vh;
+    }
+
+    .leftCadastroImage{
+        width: 35vw;
+        display: block;
+    }
+
+
+}
+
+
+
+@media screen and (min-height: 744px){
+    .infoCadastro::-webkit-scrollbar{
+        display: none;
+    }
+}
